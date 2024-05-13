@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252c33"
+    tools:context=".NewEventCategoryActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#19376D"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+<!--    <FrameLayout-->
+<!--        android:id="@+id/fragment_container"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent" />-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:orientation="vertical"
+        android:layout_marginTop="48dp"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Category Form"
+            android:textColor="#EEE"
+            android:layout_marginBottom="24dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/txtCategoryID"
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:text="Category ID"
+            android:textColor="#EEE"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editCategoryID"
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Auto-generated"
+            android:textColor="#eee"
+            android:textColorHint="#888"
+            android:enabled="false"/>
+
+        <TextView
+            android:id="@+id/txtCategoryName"
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:text="Category Name"
+            android:textColor="#EEE"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editCategoryName"
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Enter Category Name"
+            android:textColor="#EEE"
+            android:textColorHint="#888" />
+
+        <TextView
+            android:id="@+id/editEventCount"
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:text="Event Count"
+            android:textColor="#EEE"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Enter Event Count"
+            android:textColor="#EEE"
+            android:textColorHint="#888" />
+
+
+        <Switch
+            android:id="@+id/switchIsActive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Is Active?"
+            android:textColor="#EEE"
+            android:switchMinWidth="40dp"
+            android:layout_marginBottom="16dp"
+            android:thumbTextPadding="12dp"/>
+
+        <TextView
+            android:id="@+id/txtEventLocation"
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:text="Event Location"
+            android:textColor="#EEE"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editEventLocation"
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Enter Event Location"
+            android:textColor="#EEE"
+            android:textColorHint="#888" />
+
+        <Button
+            android:id="@+id/btnSaveCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Category"
+            android:textColor="#EEE"
+            android:textAlignment="center"
+            android:background="#4CAF50"
+            android:onClick="OnSaveCategoryClick"
+            android:layout_marginTop="48dp"/>
+    </LinearLayout>
+</RelativeLayout>

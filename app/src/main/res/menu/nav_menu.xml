@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/baseline_home_24"
+            android:title="Dashboard" />
+
+        <item
+            android:id="@+id/nav_all_categories"
+            android:icon="@drawable/nav_categories"
+            android:title="View All Categories" />
+
+        <item
+            android:id="@+id/nav_add_category"
+            android:icon="@drawable/add_category"
+            android:title="Add Event Category" />
+
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/nav_events"
+            android:title="View All Events" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/nav_logout"
+            android:title="Logout" />
+    </group>
+</menu>
